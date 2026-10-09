@@ -73,20 +73,7 @@ namespace Lab03
             Console.WriteLine($"│ {"Середня ціна 1 хвилини",-28} │ {avgMinuteCost,9:F3} грн/хв│");
             Console.WriteLine("└──────────────────────────────┴─────────────────┘");
 
-            // 4. Аналіз округлень та Math.Sqrt 
-            Console.WriteLine("\n=== РІВЕНЬ Б: ПЕРЕВІРКА ОКРУГЛЕНЬ ТА ДОДАТКОВИЙ ПОКАЗНИК ===");
-
-            // 4.1 Виведення головного дробового результату (зайві ГБ) у 4 виглядах округлення
-            Console.WriteLine($"\nАналіз округлення для перевищення ГБ ({extraGb}):");
-            Console.WriteLine($"{"Floor",12}{"Ceiling",12}{"Round (F2)",12}{"Truncate",12}");
-            Console.WriteLine($"{Math.Floor(extraGb),12}{Math.Ceiling(extraGb),12}{Math.Round(extraGb, 2),12}{Math.Truncate(extraGb),12}");
-
-            // 4.2 Обчислення додаткового показника за допомогою Math.Sqrt у трьох форматах
-            double sqrtGb = Math.Sqrt(usedGb);
-            Console.WriteLine($"\nДодатковий показник (квадратний корінь із використаних ГБ = √{usedGb}):");
-            Console.WriteLine($"• Формат F2: {sqrtGb:F2}");
-            Console.WriteLine($"• Формат N2: {sqrtGb:N2}");
-            Console.WriteLine($"• Формат E3: {sqrtGb:E3}");
+         
         }
     }
 }
